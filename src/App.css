@@ -1,0 +1,41 @@
+/* App.css */
+
+.container {
+  display: flex;
+  justify-content: center; /* Horizontally center both sides */
+  align-items: center; /* Vertically center both sides */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.outerbox {
+  display: flex;
+  justify-content: center; /* Center innerbox horizontally */
+  align-items: center; /* Center innerbox vertically */
+  height: 600px;
+  width: 600px;
+  z-index: 1;
+  position: relative; /* To position innerbox inside it */
+  background-color: lightgray; /* Added for visualization */
+}
+
+.innerbox {
+  height: 300px;
+  width: 300px;
+  z-index: 2;
+  background-color: red; /* Added for visualization */
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60%; /* Left side takes 80% of the width */
+}
+
+.rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%; /* Right side takes 20% of the width */
+}
