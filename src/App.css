@@ -39,3 +39,8 @@
   align-items: center;
   flex-basis: 40%; /* Right side takes 20% of the width */
 }
+
+.value {
+  fill: white;
+  font-size: 30px;
+}

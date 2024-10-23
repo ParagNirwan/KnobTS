@@ -1,10 +1,12 @@
-import React from "react";
-
 const Innerbox = () => {
   return (
     <div
       className="innerbox"
-      style={{ backgroundColor: "red", width: "100px", height: "100px" }}
+      style={{
+        backgroundColor: "hsl(0, 100%, 50%)",
+        width: "100px",
+        height: "100px",
+      }}
     ></div>
   );
 };
