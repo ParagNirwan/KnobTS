@@ -1,0 +1,44 @@
+.dial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dial {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 2px 2px 5px #bfbfbf, -2px -2px 5px #ffffff;
+  position: relative;
+  touch-action: none; /* Prevents default touch behaviors */
+  cursor: pointer;
+}
+
+.dial-indicator {
+  width: 10px;
+  height: 40px;
+  background: #ff5733;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.dial-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+  margin-top: 10px;
+}
+.circular-line {
+  width: 100px; /* Diameter of the circle */
+  height: 100px; /* Diameter of the circle */
+  border: 2px solid red; /* Thickness and color of the line */
+  border-radius: 50%; /* Makes it a circle */
+}

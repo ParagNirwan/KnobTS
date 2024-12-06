@@ -19,7 +19,7 @@ const CustomKnob = () => {
           height={70}
           radius={10}
           type="rect"
-          color="#FC5A96"
+          color="#B3B3B3D"
         />
         <Value marginBottom={0} className="value" />
       </Knob>
