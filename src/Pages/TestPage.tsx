@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Test } from "../App";
 import Dial from "../Components/Dial";
-import Outerbox from "../Components/outerbox";
+import Outerbox from "../Components/Outerbox";
 const [dialValue, setDialValue] = useState(0);
 const setValues = [7, 32, 67];
 interface TestPageProps {

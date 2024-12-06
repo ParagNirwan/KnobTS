@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
-
+  console.log("homepage");
   const startTest = () => {
     navigate("/test/1");
   };
