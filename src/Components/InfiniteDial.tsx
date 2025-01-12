@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Dial.css";
 
-const Dial = ({ min = 0, onChange }) => {
+const InfiniteDial = ({ min = 0, onChange }) => {
   const [value, setValue] = useState(min); // Start from the min value or 0
   const [rotation, setRotation] = useState(0); // Initial rotation state
   const dialRef = useRef(null);
@@ -101,4 +101,4 @@ const Dial = ({ min = 0, onChange }) => {
   );
 };
 
-export default Dial;
+export default InfiniteDial;

@@ -1,11 +1,28 @@
-/* App.css */
-
 .container {
   display: flex;
-  justify-content: center; /* Horizontally center both sides */
-  align-items: center; /* Vertically center both sides */
+  justify-content: center; /* Keep the left and right sides horizontally centered */
+  align-items: center;
   height: 100vh; /* Full viewport height */
   width: 100vw; /* Full viewport width */
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60%; /* Left side takes 60% of the width */
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column; /* Stack the Dial/Slider and button vertically */
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%; /* Right side takes 40% of the width */
+}
+
+.rightSide > .button {
+  margin-top: 20px; /* Add spacing between the Dial/Slider and the button */
 }
 
 .outerbox {
@@ -24,20 +41,6 @@
   width: 300px;
   z-index: 2;
   background-color: red; /* Added for visualization */
-}
-
-.leftSide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 60%; /* Left side takes 80% of the width */
-}
-
-.rightSide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: 40%; /* Right side takes 20% of the width */
 }
 
 .value {
