@@ -43,7 +43,7 @@ const InfiniteDial = ({ min = 0, onChange }) => {
     // Update rotation and value
     setRotation((prev) => prev + adjustedDeltaAngle);
     setValue((prev) => {
-      const newValue = prev + adjustedDeltaAngle;
+      const newValue = Math.max(min, prev + adjustedDeltaAngle); // Ensure value is >= min
       if (onChange) onChange(Math.round(newValue));
       return newValue;
     });

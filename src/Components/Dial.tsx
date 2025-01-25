@@ -1,10 +1,18 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Dial.css";
 
-const Dial = ({ min, max, onChange, finite = false }) => {
-  const [value, setValue] = useState(min || 0); // Default to 0 if min is not provided
-  const [rotation, setRotation] = useState(0); // Start at 0 degrees
+const Dial = ({ min = 0, max = 100, onChange, finite = false }) => {
+  const [value, setValue] = useState(min); // Default to min
+  const [rotation, setRotation] = useState(-140); // Start at -140 degrees (corresponding to min)
   const dialRef = useRef(null);
+
+  useEffect(() => {
+    // Initialize rotation to match the initial value
+    if (finite && min !== undefined && max !== undefined) {
+      const initialRotation = ((value - min) / (max - min)) * 280 - 140;
+      setRotation(initialRotation);
+    }
+  }, [min, max, value, finite]);
 
   const handleRotate = (event) => {
     const rect = dialRef.current.getBoundingClientRect();
