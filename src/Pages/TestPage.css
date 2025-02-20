@@ -29,8 +29,8 @@
   display: flex;
   justify-content: center; /* Center innerbox horizontally */
   align-items: center; /* Center innerbox vertically */
-  height: 600px;
-  width: 600px;
+  height: 757px;
+  width: 757px;
   z-index: 1;
   position: relative; /* To position innerbox inside it */
   background-color: lightgray; /* Added for visualization */

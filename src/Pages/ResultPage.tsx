@@ -10,8 +10,8 @@ const ResultsPage: React.FC = () => {
     localStorage.getItem("testTimes") || "[]"
   );
 
-  const handleGoogleForm = () => {
-    window.open("https://forms.google.com", "_blank");
+  const handleForm = () => {
+    window.open("https://forms.office.com/r/vYYL3DQgjf", "_blank");
   };
 
   return (
@@ -24,7 +24,7 @@ const ResultsPage: React.FC = () => {
           </li>
         ))}
       </ul>
-      <button onClick={handleGoogleForm}>Open Google Form</button>
+      <button onClick={handleForm}>Open Questionnaire</button>
     </div>
   );
 };
